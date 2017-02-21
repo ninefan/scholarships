@@ -1,9 +1,12 @@
-import xlrd, xlwt
+# -*- coding:utf-8 -*-
 
-workbook = xlrd.open_workbook('2016奖学金打分汇总表.xlsx')
+import xlrd
+import xlwt
+
+workbook = xlrd.open_workbook(u'2016奖学金打分汇总表.xlsx')
 print(workbook.sheet_names())
 
-table = workbook.sheet_by_name('学业优秀')
+table = workbook.sheet_by_name(u'学业优秀')
 print(table.nrows, table.ncols)
 
 # 这张表从第3行开始，29行结束
