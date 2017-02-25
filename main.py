@@ -39,6 +39,8 @@ table_ = workbook_.get_sheet(1)
 # 遍历综合优秀表
 for i in range(2, table.nrows):
     name = table.cell(i, 0).value
+    if len(name) == 0:
+        continue
     print(name)
     if score_map.get(name) is None:
         score_map[name] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
