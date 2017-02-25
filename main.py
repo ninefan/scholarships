@@ -20,5 +20,5 @@ for i in range(2, 28):
 #workbook1 = xlwt.open_workbook(u'2016奖学金打分汇总表.xlsx')
 #table1 = workbook1.sheet_by_name(u'综合优秀')
 #for i in range(2,29):
-#  \  table.write(i,15,a[i][2])
+#    table.write(i,15,a[i][2])
 
