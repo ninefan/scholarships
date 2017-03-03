@@ -15,9 +15,6 @@ class Row:
         self.data = data
         self.score_sum = 0
 
-    def set_score_sum(self, score_sum):
-        self.score_sum = score_sum
-
     # 比较函数，先比较年级小在前，后比较分数高在前
     def __lt__(self, other):
         if self.grade != other.grade:
